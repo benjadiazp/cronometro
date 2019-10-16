@@ -48,9 +48,10 @@ boton.onclick = function () {
 reiniciar.onclick = function () {
   h1.textContent = "00:00:00";
   segundos = 0; minutos = 0; horas = 0;
+  clearTimeout(t);
   estado = 0;
-  boton.textContent = "Comenzar"
-  boton.style.backgroundColor = "limegreen;";
+  boton.textContent = "Comenzar";
+  boton.style.backgroundColor = "limegreen";
 }
 
 aumentar.onclick = function () {
